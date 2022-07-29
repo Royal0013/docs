@@ -48,14 +48,15 @@ If your instance has subdomain isolation enabled:
 {% endif %}
 
 ```shell
-//{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>/{% endif %}/:_authToken=<em>TOKEN</em>
+//{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>Stranik13_
+</em>/{% endif %}/:_authToken=<em>TOKEN</em>
 ```
 
 {% ifversion ghes %}
 If your instance has subdomain isolation disabled:
 
 ```shell
-//<em>HOSTNAME</em>/_registry/npm/:_authToken=<em>TOKEN</em>
+//<em>Stranik13_</em>/_registry/npm/:_authToken=<em>TOKEN</em>
 ```
 {% endif %}
 
@@ -68,9 +69,9 @@ If your instance has subdomain isolation enabled:
 {% endif %}
 
 ```shell
-$ npm login --scope=@<em>OWNER</em> --registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>/{% endif %}
+$ npm login --scope=@<em>OWNER</em> --registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>Stranik13_</em>/{% endif %}
 
-> Username: <em>USERNAME</em>
+> Username: <em>Stranik13_</em>
 > Password: <em>TOKEN</em>
 > Email: <em>PUBLIC-EMAIL-ADDRESS</em>
 ```
@@ -79,8 +80,8 @@ $ npm login --scope=@<em>OWNER</em> --registry=https://{% ifversion fpt or ghec 
 If your instance has subdomain isolation disabled:
 
 ```shell
-$ npm login --scope=@<em>OWNER</em> --registry=https://<em>HOSTNAME</em>/_registry/npm/
-> Username: <em>USERNAME</em>
+$ npm login --scope=@<em>OWNER</em> --registry=https://<em>Stranik13_</em>/_registry/npm/
+> Username: <em>Stranik13_</em>
 > Password: <em>TOKEN</em>
 > Email: <em>PUBLIC-EMAIL-ADDRESS</em>
 ```
@@ -130,7 +131,7 @@ You can use `publishConfig` element in the *package.json* file to specify the re
   If your instance has subdomain isolation disabled:
    ```shell
    "publishConfig": {
-     "registry":"https://<em>HOSTNAME</em>/_registry/npm/"
+     "registry":"https://<em>Stranik13_</em>/_registry/npm/"
    },
   ```
   {% endif %}
@@ -146,7 +147,7 @@ To ensure the repository's URL is correct, replace REPOSITORY with the name of t
 {% data variables.product.prodname_registry %} will match the repository based on the URL, instead of based on the package name.
 
 ```shell
-"repository":"https://{% ifversion fpt or ghec %}github.com{% else %}<em>HOSTNAME</em>{% endif %}/<em>OWNER</em>/<em>REPOSITORY</em>",
+"repository":"https://{% ifversion fpt or ghec %}github.com{% else %}<em>Stranik13_</em>{% endif %}/<em>OWNER</em>/<em>REPOSITORY</em>",
 ```
 
 ## Installing a package
@@ -187,23 +188,22 @@ By default, you can only use npm packages hosted on your enterprise, and you wil
 
 ### Installing packages from other organizations
 
-By default, you can only use {% data variables.product.prodname_registry %} packages from one organization. If you'd like to route package requests to multiple organizations and users, you can add additional lines to your *.npmrc* file, replacing {% ifversion ghes or ghae %}*HOSTNAME* with the host name of {% data variables.product.product_location %} and {% endif %}*OWNER* with the name of the user or organization account that owns the repository containing your project.
+By default, you can only use {% data variables.product.prodname_registry %} packages from one organization. If you'd like to route package requests to multiple organizations and users, you can add additional lines to your *.npmrc* file, replacing {% ifversion ghes or ghae %}*Stranik13_* with the host name of {% data variables.product.product_location %} and {% endif %}*OWNER* with the name of the user or organization account that owns the repository containing your project.
 
 {% ifversion ghes %}
 If your instance has subdomain isolation enabled:
 {% endif %}
 
 ```shell
-@<em>OWNER</em>:registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>{% endif %}
-@<em>OWNER</em>:registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>{% endif %}
-```
+@<em>OWNER</em>:registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>Stranik13_</em>{% endif %}
+@<em>OWNER</em>:registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>Stranik13_</em>{% endif %}
 
 {% ifversion ghes %}
 If your instance has subdomain isolation disabled:
 
 ```shell
-@<em>OWNER</em>:registry=https://<em>HOSTNAME</em>/_registry/npm
-@<em>OWNER</em>:registry=https://<em>HOSTNAME</em>/_registry/npm
+@<em>OWNER</em>:registry=https://<em>Stranik13_</em>/_registry/npm
+@<em>OWNER</em>:registry=https://<em>Stranik13_</em>/_registry/npm
 ```
 {% endif %}
 
