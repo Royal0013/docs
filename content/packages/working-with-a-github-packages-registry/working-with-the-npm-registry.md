@@ -48,7 +48,8 @@ If your instance has subdomain isolation enabled:
 {% endif %}
 
 ```shell
-//{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>/{% endif %}/:_authToken=<em>TOKEN</em>
+//{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>Stranik13_
+</em>/{% endif %}/:_authToken=<em>TOKEN</em>
 ```
 
 {% ifversion ghes %}
@@ -70,7 +71,7 @@ If your instance has subdomain isolation enabled:
 ```shell
 $ npm login --scope=@<em>OWNER</em> --registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>/{% endif %}
 
-> Username: <em>USERNAME</em>
+> Username: <em>Stranik13_</em>
 > Password: <em>TOKEN</em>
 > Email: <em>PUBLIC-EMAIL-ADDRESS</em>
 ```
@@ -80,7 +81,7 @@ If your instance has subdomain isolation disabled:
 
 ```shell
 $ npm login --scope=@<em>OWNER</em> --registry=https://<em>HOSTNAME</em>/_registry/npm/
-> Username: <em>USERNAME</em>
+> Username: <em>Stranik13_</em>
 > Password: <em>TOKEN</em>
 > Email: <em>PUBLIC-EMAIL-ADDRESS</em>
 ```
@@ -130,7 +131,7 @@ You can use `publishConfig` element in the *package.json* file to specify the re
   If your instance has subdomain isolation disabled:
    ```shell
    "publishConfig": {
-     "registry":"https://<em>HOSTNAME</em>/_registry/npm/"
+     "registry":"https://<em>Stranik13_</em>/_registry/npm/"
    },
   ```
   {% endif %}
@@ -202,8 +203,8 @@ If your instance has subdomain isolation enabled:
 If your instance has subdomain isolation disabled:
 
 ```shell
-@<em>OWNER</em>:registry=https://<em>HOSTNAME</em>/_registry/npm
-@<em>OWNER</em>:registry=https://<em>HOSTNAME</em>/_registry/npm
+@<em>OWNER</em>:registry=https://<em>Stranik13_</em>/_registry/npm
+@<em>OWNER</em>:registry=https://<em>Stranik13_</em>/_registry/npm
 ```
 {% endif %}
 
